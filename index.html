@@ -4,6 +4,33 @@
   <meta charset="UTF-8">
   <title>Style Sanctuary</title>
   <style>
+    @media only screen and (max-width: 600px) {
+      body {
+        padding: 20px 10px;
+      }
+      .container {
+        padding: 20px;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+      p.intro {
+        font-size: 1rem;
+      }
+      .style-prompt input {
+        font-size: 0.9rem;
+      }
+      .style-prompt button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+      }
+      .style-options .option {
+        padding: 15px;
+      }
+      .style-options .option h3 {
+        font-size: 1.2rem;
+      }
+    }
     @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 
     body {
@@ -107,10 +134,11 @@
     </div>
 
     <div class="style-options" id="style-options">
-      <div class="option">
+        <div class="option">
         <h3>Structured Confidence</h3>
         <p>Building...</p>
       </div>
+      <div class="option">
         <h3>Poetic Ease</h3>
         <p>Building...</p>
       </div>
@@ -137,4 +165,3 @@
   </script>
 </body>
 </html>
-
