@@ -49,15 +49,20 @@ h1 {
 }
 
 .next-button {
-  margin-top: 2rem;
-  background-color: #d8cfc4;
-  color: #3e3e3e;
-  border: none;
-  padding: 0.7rem 1.5rem;
-  font-size: 1rem;
-  border-radius: 30px;
-  cursor: pointer;
-  display: none;
+  display: inline-block;           /* Makes sure the button is visible */
+  margin-top: 2rem;                /* Adds spacing above */
+  padding: 0.8rem 1.6rem;          /* Size of the button */
+  font-size: 1rem;                 /* Font size */
+  background-color: #d8cfc4;       /* Soft background color */
+  color: #3e3e3e;                  /* Text color */
+  border: none;                    /* No border */
+  border-radius: 30px;             /* Rounded corners */
+  cursor: pointer;                 /* Pointer cursor on hover */
+  transition: background-color 0.3s ease;
+}
+
+.next-button:hover {
+  background-color: #c8bfb4;       /* Slightly darker on hover */
 }
 
 
