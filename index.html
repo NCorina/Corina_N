@@ -2,19 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dress to Call Her In</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manifestation Styling Flow</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <div class="container">
-    <div class="welcome-screen">
-      <h1>Dress to call her in.</h1>
-      <p class="intro-text">Start with stillness. Let her rise in you.</p>
-      <button class="begin-button" onclick="startMeditation()">Begin</button>
+<body class="meditation-bg">
+  <div class="meditation-container">
+    <!-- Step 1: Manifestation Input -->
+    <div id="manifestation-step">
+      <h2>What are you calling in today?</h2>
+      <textarea id="manifestationInput" placeholder="Write your intention here..." rows="4"></textarea>
+      <button onclick="submitManifestation()">Continue</button>
+    </div>
+
+    <!-- Step 2: Choose a Piece -->
+    <div id="piece-step" style="display:none">
+      <h2>Would you like to start with a piece you love?</h2>
+      <button onclick="selectPiece('slip dress')">Yes – Start with my slip dress</button>
+      <button onclick="suggestFromMood()">No – Suggest based on my intention</button>
+    </div>
+
+    <!-- Step 3: Style Suggestion -->
+    <div id="suggestion-step" style="display:none">
+      <h2>Your Styling Suggestion</h2>
+      <p id="suggestionText"></p>
+      <div id="visuals"></div>
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script>
+    let manifestation = "";
+
+    function submitManifestation() {
+      manifestation = document.getElementById("manifestationInput").value.trim();
+      if (manifestation !== "") {
+        document.getElementById("manifestation-step").style.display = "none";
+        document.getElementById("piece-step").style.display = "block";
+      }
+    }
+
+    function selectPiece(piece) {
+      document.getElementById("piece-step").style.display = "none";
+      document.getElementById("suggestion-step").style.display = "block";
+      const suggestionText = `You're calling in: ${manifestation} \nYour chosen piece: a 90s-inspired slip dress.\n\nLayer it with a fitted black tee or soft knit. Add a cropped linen jacket for focus without force. Choose flat mules or worn-in sneakers for grounded movement.\n\nInspired by: Nora Ephron meets Sofia Coppola.`;
+      document.getElementById("suggestionText").textContent = suggestionText;
+    }
+
+    function suggestFromMood() {
+      document.getElementById("piece-step").style.display = "none";
+      document.getElementById("suggestion-step").style.display = "block";
+      const suggestionText = `You're calling in: ${manifestation} \n\nTry a structured knit top with high-waisted linen pants. Add warm-toned jewelry and a soft scent.\n\nInspired by: the feeling of a golden hour cafe window.`;
+      document.getElementById("suggestionText").textContent = suggestionText;
+    }
+  </script>
 </body>
 </html>
