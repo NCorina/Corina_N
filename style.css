@@ -115,3 +115,12 @@ textarea {
   color: #3e3e3e;
   line-height: 1.6;
 }
+<body class="manifestation-bg">
+.manifestation-bg {
+  background-image: url('poppies-1378167_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #3e3e3e;
+}
