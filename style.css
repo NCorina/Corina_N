@@ -122,7 +122,8 @@ textarea {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: #3e3e3e;
+  color: #f5f5f5; /* soft white */;
+
 }
 textarea, input, button {
   color: #ffffff;
