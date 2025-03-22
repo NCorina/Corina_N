@@ -108,16 +108,8 @@
 
     <div class="style-options" id="style-options">
       <div class="option">
-        <h3>Poetic Ease</h3>
-        <p>Dreamy and delicate, styled with a flowy silk skirt, a knit cardigan, and minimal jewelry.</p>
-      </div>
-      <div class="option">
-        <h3>Structured Confidence</h3>
-        <p>Pair with high-waisted trousers, a sleek blazer, and simple leather flats for a confident, clean look.</p>
-      </div>
-      <div class="option">
         <h3>Warm Casual</h3>
-        <p>Style it with jeanleggins jeans, a soft cardigan, and cozy sneakers for an approachable, sporty everyday feel.</p>
+        <p><a href="jeanne-damas.html">Style it with jean leggings, a soft cardigan, and cozy sneakers for an approachable, sporty everyday feel.</a></p>
       </div>
     </div>
   </div>
@@ -127,7 +119,7 @@
       const input = document.getElementById('style-input').value.toLowerCase();
       const options = document.getElementById('style-options');
 
-      if (input.includes('fitted camisole') || input.includes('camisole')) {
+      if (input.includes('fitted camisole') || input.includes('camisole') || input.includes('cami') || input.includes('tank')) {
         options.style.display = 'block';
       } else {
         options.innerHTML = '<p>Sorry, I don\'t have options for that piece yet!</p>';
@@ -137,4 +129,3 @@
   </script>
 </body>
 </html>
-
