@@ -21,17 +21,14 @@ h1 {
   margin-bottom: 1rem;
 }
 .meditation-bg {
-  background-color: #f6f1eb;
+  background-image: url('C:\Users\corin\Downloads\meadow-5648849_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: #3e3e3e;
-  font-family: 'Georgia', serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  flex-direction: column;
-  text-align: center;
-  padding: 2rem;
 }
+
 
 .meditation-container {
   max-width: 600px;
