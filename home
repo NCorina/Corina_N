@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Style Sanctuary</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+    body {
+      font-family: 'EB Garamond', serif;
+      background: #e8f5e9;
+      color: #3b3b3b;
+      margin: 0;
+      padding: 60px 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #f9f9f9;
+      padding: 40px;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      text-align: center;
+    }
+    h1 {
+      color: #6e8260;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    p.intro {
+      font-size: 1.1rem;
+      font-style: italic;
+      color: #5e4b44;
+      margin-bottom: 40px;
+    }
+    a.button {
+      display: inline-block;
+      background-color: #a3c8a4;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+    a.button:hover {
+      background-color: #8cb391;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Style Sanctuary</h1>
+    <p class="intro">A slow fashion inspiration app that curates outfits based on feeling, mood, and muse energy.
+    Start with a single piece, and discover styling as soul nourishment.</p>
+
+    <a class="button" href="jeanne-damas.html">Explore the Jeanne Damas Moodboard →</a>
+  </div>
+</body>
+</html>
