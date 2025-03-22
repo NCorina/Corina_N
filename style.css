@@ -20,6 +20,46 @@ h1 {
   font-weight: 400;
   margin-bottom: 1rem;
 }
+.meditation-bg {
+  background-color: #f6f1eb;
+  color: #3e3e3e;
+  font-family: 'Georgia', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+}
+
+.meditation-container {
+  max-width: 600px;
+}
+
+.meditation-text p {
+  font-size: 1.3rem;
+  opacity: 0;
+  margin: 1.5rem 0;
+  transition: opacity 1.5s ease;
+}
+
+.show-line {
+  opacity: 1 !important;
+}
+
+.next-button {
+  margin-top: 2rem;
+  background-color: #d8cfc4;
+  color: #3e3e3e;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  display: none;
+}
+
 
 .intro-text {
   font-family: 'Helvetica Neue', sans-serif;
