@@ -15,12 +15,14 @@
       <button onclick="submitManifestation()">Continue</button>
     </div>
 
-    <!-- Step 2: Choose a Piece -->
-    <div id="piece-step" style="display:none">
-      <h2>Would you like to start with a piece you love?</h2>
-      <button onclick="selectPiece('slip dress')">Yes – Start with my slip dress</button>
-      <button onclick="suggestFromMood()">No – Suggest based on my intention</button>
-    </div>
+<!-- Step 2: Choose a Piece -->
+<div id="piece-step" style="display:none">
+  <h2>Would you like to start with a piece you love?</h2>
+  <input type="text" id="userPiece" placeholder="e.g. flowy slip dress, linen pants" />
+  <button onclick="selectPiece()">Style this piece</button>
+  <button onclick="suggestFromMood()">No – Suggest based on my intention</button>
+</div>
+
 
     <!-- Step 3: Style Suggestion -->
     <div id="suggestion-step" style="display:none">
