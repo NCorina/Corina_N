@@ -3,7 +3,7 @@ body {
   padding: 0;
   font-family: 'Georgia', serif;
   background-color: #f6f1eb;
- color: #f5f5f5; /* soft white */;
+  color: #f5f5f5; /* soft white */;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,7 +52,8 @@ h1 {
   padding: 0.8rem 1.6rem;          /* Size of the button */
   font-size: 1rem;                 /* Font size */
   background-color: #d8cfc4;       /* Soft background color */
-  color: #3e3e3e;                  /* Text color */
+  color: #f5f5f5; /* soft white */
+                 /* Text color */;
   border: none;                    /* No border */
   border-radius: 30px;             /* Rounded corners */
   cursor: pointer;                 /* Pointer cursor on hover */
