@@ -4,105 +4,76 @@
   <meta charset="UTF-8">
   <title>Wardrobe Library</title>
 
-  <!-- Importing soft serif + clean sans-serif fonts from Google -->
+  <!-- Google Fonts: Artistic Serif + Clean Sans-Serif -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
 
   <style>
     body {
-  background-image: url('meadow-flowers-1406846_1280.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  font-family: 'Inter', sans-serif;
-  color: #333;
-  margin: 0;
-  padding: 2rem;
-}
-
-    /* Page-wide styles */
-    body {
-      background-color: #d0f0e0; /* soft mint green */
+      background-image: url('meadow-flowers-1406846_1280.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
       font-family: 'Inter', sans-serif;
       color: #333;
       margin: 0;
       padding: 2rem;
     }
 
-    h1, h2 {
+    h1 {
       font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
       color: #2a2a2a;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .wardrobe-grid {
+    .artistic-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
+      gap: 3rem;
+      justify-content: center;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
     .item-tile {
-      background-color: #fff;
-      border-radius: 12px;
-      padding: 1rem;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+      background-color: white;
+      padding: 12px 12px 20px 12px;
+      width: 250px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      border: 1px solid #ddd;
       text-align: center;
-      transition: transform 0.2s ease;
+      transform: rotate(-1deg);
+      transition: transform 0.3s ease;
+    }
+
+    .item-tile:nth-child(even) {
+      transform: rotate(1.5deg);
     }
 
     .item-tile:hover {
-      transform: translateY(-4px);
-    }
-
-    .item-tile img {
-      width: 100%;
-      border-radius: 8px;
-    }
-
-    .item-tile h2 {
-      margin-top: 0.75rem;
-      font-size: 1.1rem;
-    }
-    .item-tile img {
-  width: 250px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-.artistic-layout {
-      position: relative;
-      width: 100%;
-      height: 100vh; /* or more if needed */
-    }
-
-    .item-tile {
-      position: absolute;
-      text-align: center;
-      width: 250px;
+      transform: scale(1.03);
     }
 
     .item-tile img {
       width: 100%;
       height: 300px;
       object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-    }
-
-    .item-tile:hover {
-      transform: scale(1.05);
+      display: block;
+      margin-bottom: 0.75rem;
+      border: none;
     }
 
     .item-tile h2 {
       font-family: 'Playfair Display', serif;
       font-size: 1rem;
-      margin-top: 0.5rem;
+      margin: 0;
+      color: #2a2a2a;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -111,22 +82,20 @@
   <h1>My Wardrobe Library</h1>
 
   <div class="artistic-grid">
-  <a href="camisole-tops.html" class="item-tile">
-    <img src="refpinktop.jpeg" alt="Reformation Top">
-    <h2>Camisole Top</h2>
-  </a>
+    <a href="camisole-tops.html" class="item-tile">
+      <img src="refpinktop.jpeg" alt="Reformation Camisole">
+      <h2>Camisole Top</h2>
+    </a>
 
-  <a href="wool-cardigan.html" class="item-tile">
-    <img src="images/sezane-cardigan.jpg" alt="Wool Cardigan">
-    <h2>Wool Cardigan</h2>
-  </a>
+    <a href="wool-cardigan.html" class="item-tile">
+      <img src="images/sezane-cardigan.jpg" alt="Wool Cardigan">
+      <h2>Wool Cardigan</h2>
+    </a>
 
-  <a href="midi-skirt.html" class="item-tile">
-    <img src="images/flowingmidi.jpeg" alt="Midi Skirt">
-    <h2>Midi Skirt</h2>
-  </a>
-</div>
-
-
+    <a href="midi-skirt.html" class="item-tile">
+      <img src="images/flowingmidi.jpeg" alt="Midi Skirt">
+      <h2>Midi Skirt</h2>
+    </a>
+  </div>
 </body>
 </html>
