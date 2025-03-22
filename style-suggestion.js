@@ -45,3 +45,19 @@ function startAgain() {
   localStorage.clear();
   window.location.href = "index.html";
 }
+function saveLook() {
+  const lookEntry = {
+    date: new Date().toLocaleDateString(),
+    vibe: vibeMatch.vibe,
+    text: vibeMatch.text,
+    pieces: vibeMatch.pieces,
+    muse: vibeMatch.muse,
+    note: prompt("Want to add a personal note about how you feel in this look?")
+  };
+
+  let savedLooks = JSON.parse(localStorage.getItem("lookbook")) || [];
+  savedLooks.push(lookEntry);
+  localStorage.setItem("lookbook", JSON.stringify(savedLooks));
+
+  alert("Look saved to your Lookbook.");
+}
