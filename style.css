@@ -220,3 +220,37 @@ h2, p, label {
   margin: 0;
   text-align: center;
 }
+.main-nav {
+  background-color: #f1ede7;
+  padding: 16px 24px;
+  text-align: center;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  border-bottom: 1px solid #ddd;
+}
+
+.main-nav a {
+  color: #2b2b2b;
+  margin: 0 14px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #555;
+  text-decoration: underline dotted;
+}
+
+@media (max-width: 600px) {
+  .main-nav {
+    font-size: 0.9rem;
+    padding: 12px 12px;
+  }
+
+  .main-nav a {
+    display: inline-block;
+    margin: 8px;
+  }
+}
+
