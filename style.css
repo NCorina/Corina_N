@@ -3,7 +3,7 @@ body {
   padding: 0;
   font-family: 'Georgia', serif;
   background-color: #f6f1eb;
-  color: #3e3e3e;
+ color: #f5f5f5; /* soft white */;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,4 +123,13 @@ textarea {
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #3e3e3e;
+}
+textarea, input, button {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1); /* soft transparent white */
+  border: 1px solid #ffffff;
+}
+
+::placeholder {
+  color: #e0e0e0; /* soft placeholder text */
 }
