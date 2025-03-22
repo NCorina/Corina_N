@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume – By [Corina Nicoara]</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-image: url('poppies-1378167_1280.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #ffffff;
+    }
+
+    .resume-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 16px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 2rem;
+    }
+
+    p, li {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      p, li {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="resume-container">
+    <h1>Resume</h1>
+    <p>You can view or download my full resume here:</p>
+    <p><a href="Corina_Nicoara_Data_Analyst_Resume.pdf" target="_blank">Download Resume (PDF)</a></p>
+
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Python, R, SQL</li>
+      <li>Data Analysis & Visualization</li>
+      <li>UX & UI Design Principles</li>
+      <li>Academic Research & Writing</li>
+    </ul>
+
+    <h2>Links</h2>
+    <ul>
+      <li><a href="https://github.com/NCorina" target="_blank">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/corina-nicoara-6bb4b0170/" target="_blank">LinkedIn</a></li>
+      <!-- Add portfolio or personal blog links here if needed -->
+    </ul>
+  </div>
+</body>
+</html>
