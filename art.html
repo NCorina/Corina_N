@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Art portfolio – By [Corina Nicoara]</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-image: url('meadow-5648849_1280');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #ffffff;
+    }
+
+    .art-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 16px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="art-container">
+    <h1>My Art</h1>
+    <p>A collection of digital paintings, illustrations, and visual moments I love.</p>
+
+    <div class="gallery">
+      <!-- Replace with your images -->
+      <img src="paris.jpeg" alt="Art piece 1">
+      <img src="mountainscape.jpeg" alt="Art piece 2">
+      <img src="wallflower.jpeg" alt="Art piece 3">
+      <img src="vespa.jpeg" alt="Art piece 4">
+      <!-- Add more as needed -->
+    </div>
+  </div>
+</body>
+</html>
