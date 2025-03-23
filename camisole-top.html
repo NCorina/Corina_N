@@ -1,126 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Camisole Top Styles</title>
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8" />
+  <title>Fitted Camisole Top – Styling Journal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display&display=swap" rel="stylesheet">
   <style>
     body {
-      background-image: url('meadow-flowers-1406846_1280.jpg');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      font-family: 'Inter', sans-serif;
-      color: #333;
       margin: 0;
       padding: 2rem;
-    }
-
-    a {
+      font-family: 'Inter', sans-serif;
+      background-color: #fdfaf6;
       color: #2a2a2a;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      background-color: rgba(255, 255, 255, 0.85);
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      line-height: 1.7;
     }
 
     h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .item-intro {
-      font-size: 1rem;
-      line-height: 1.6;
-      margin-bottom: 2rem;
-    }
-
-    .outfit-gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      margin-bottom: 2rem;
-    }
-
-    .outfit {
-      background: white;
-      padding: 1rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
       text-align: center;
     }
 
-    .outfit img {
+    .item-image {
+      display: block;
+      max-width: 400px;
+      margin: 0 auto 2rem auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .section {
+      max-width: 900px;
+      margin: 3rem auto;
+    }
+
+    .section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+
+    .style-options {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2.5rem;
+    }
+
+    .style-block {
+      background: #ffffff;
+      border: 1px solid #ddd;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .polaroid {
+      background-color: #fff;
+      padding: 10px 10px 30px 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      border: 1px solid #ccc;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    .polaroid img {
       width: 100%;
       height: auto;
+      display: block;
       object-fit: cover;
-      margin-bottom: 0.5rem;
     }
 
-    .outfit p {
+    .polaroid-caption {
+      font-size: 0.85rem;
+      font-style: italic;
+      margin-top: 6px;
+      color: #555;
+    }
+
+    .style-block h3 {
       font-family: 'Playfair Display', serif;
-      font-size: 0.95rem;
-      color: #444;
+      font-size: 1.2rem;
+      margin: 1rem 0 0.5rem 0;
     }
 
-    .styled-with ul {
+    blockquote {
+      font-style: italic;
+      font-size: 1.1rem;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: #f7f5f2;
+      border-left: 4px solid #b7b4aa;
+      max-width: 700px;
+    }
+
+    .brand-list {
       list-style: none;
       padding-left: 0;
     }
 
-    .styled-with li {
-      margin-bottom: 0.3rem;
+    .brand-list li {
+      margin-bottom: 1rem;
     }
 
-    .back-link {
-      display: inline-block;
-      margin-bottom: 1.5rem;
+    .brand-list a {
+      color: #2a2a2a;
+      font-weight: 500;
+      text-decoration: underline dotted;
+    }
+
+    @media (max-width: 600px) {
+      .polaroid {
+        padding: 8px 8px 24px 8px;
+      }
     }
   </style>
 </head>
-
 <body>
-  <div class="container">
-    <a href="wardrobe-library.html" class="back-link">← Back to Wardrobe Library</a>
 
-    <h1>Reformation Camisole Top</h1>
-    <p class="item-intro">
-      This soft pink camisole is one of my most versatile pieces—perfect for layering or wearing alone. It has a vintage cut, light structure, and pairs beautifully with both romantic and relaxed styling.
-    </p>
+  <h1>Fitted Camisole Top</h1>
+  <img src="camisole.jpg" alt="Fitted Camisole" class="item-image" />
 
-    <div class="outfit-gallery">
-      <div class="outfit">
-        <img src="camijeansoutfit.jpeg" alt="Outfit 1">
-        <p>Paired with straight leg gray denim, a pastel green cardigan sweater and ballet flats for a soft afternoon café mood.</p>
-      </div>
-      <div class="outfit">
-        <img src="images/cami-outfit2.jpg" alt="Outfit 2">
-        <p>Layered under a cream cardigan with tailored linen pants — polished but easeful.</p>
-      </div>
-      <div class="outfit">
-        <img src="images/cami-outfit3.jpg" alt="Outfit 3">
-        <p>Worn with wide-leg jeans and sneakers for a grounded but feminine day out.</p>
-      </div>
-    </div>
+  <div class="section">
+    <h2>Three Ways to Style It</h2>
+    <div class="style-options">
 
-    <div class="styled-with">
-      <h2>Styled With:</h2>
-      <ul>
-        <li><a href="midi-skirt.html">Flowing Midi Skirt</a></li>
-        <li><a href="wool-cardigan.html">Wool Cardigan</a></li>
-        <li><a href="saucony-sneakers.html">Saucony Omni Walkers</a></li>
-      </ul>
+      <div class="style-block">
+        <div class="polaroid">
+          <img src="look1.jpg" alt="Parisian Light Look" />
+          <div class="polaroid-caption">Parisian Light</div>
+        </div>
+        <h3>1. Parisian Light</h3>
+        <p>Layer under a linen blazer with vintage jeans and a silk scarf. Add minimal gold jewelry.</p>
+      </div>
+
+      <div class="style-block">
+        <div class="polaroid">
+          <img src="look2.jpg" alt="90s Cool Look" />
+          <div class="polaroid-caption">90s Cool</div>
+        </div>
+        <h3>2. 90s Cool</h3>
+        <p>Wear over a slim white tee with cargo trousers and low-top sneakers. Finish with a claw clip.</p>
+      </div>
+
+      <div class="style-block">
+        <div class="polaroid">
+          <img src="look3.jpg" alt="Soft Layering Look" />
+          <div class="polaroid-caption">Soft Layering</div>
+        </div>
+        <h3>3. Soft Layering</h3>
+        <p>Style under a sheer cardigan with a maxi skirt and ballet flats. Add a soft tote for texture.</p>
+      </div>
+
     </div>
   </div>
+
+  <div class="section">
+    <h2>Inspiration</h2>
+    <blockquote>
+      “She was wearing a slip of a blouse, the kind that makes you feel like summer might be permanent.”  
+      — *From a forgotten novel, but never a forgotten moment*
+    </blockquote>
+  </div>
+
+  <div class="section">
+    <h2>Conscious Brand Recommendations</h2>
+    <ul class="brand-list">
+      <li><a href="https://www.reformation.com" target="_blank">Reformation</a> – Great for fitted linen camisoles with a soft structure, made in Los Angeles.</li>
+      <li><a href="https://www.amourvert.com" target="_blank">Amour Vert</a> – Organic basics in soft neutrals. Ethically made.</li>
+      <li><a href="https://www.rouje.com" target="_blank">Rouje</a> – French-girl style camisoles, often in deadstock silk and vintage prints.</li>
+    </ul>
+  </div>
+
 </body>
 </html>
