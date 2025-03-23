@@ -5,30 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Me – Corina Nicoara</title>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter&display=swap" rel="stylesheet">
+
+  <!-- GoatCounter Analytics -->
+  <script data-goatcounter="https://220957.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+
   <style>
     body {
       margin: 0;
       padding: 0;
-      background-image: url('airplane-2559913_1280.jpg'); /* Replace with your chosen image */
+      background-image: url('airplane-2559913_1280.jpg'); /* Replace with your image */
       background-size: cover;
       background-position: center;
-      background-repeat: no-repeat;
       background-attachment: fixed;
       font-family: 'Inter', sans-serif;
-      color: #2d2d2d;
+      color: #f8f8f8;
+      line-height: 1.8;
     }
 
     nav {
-      background-color: rgba(255, 255, 255, 0.8);
+      background-color: rgba(0, 0, 0, 0.5);
       padding: 16px 24px;
       text-align: center;
       font-size: 1rem;
       font-family: 'Inter', sans-serif;
-      border-bottom: 1px solid #ddd;
     }
 
     nav a {
-      color: #2b2b2b;
+      color: #f8f8f8;
       margin: 0 14px;
       text-decoration: none;
       font-weight: 500;
@@ -36,63 +40,64 @@
     }
 
     nav a:hover {
-      color: #555;
+      color: #ffffff;
       text-decoration: underline dotted;
     }
 
     .about-wrapper {
-      display: flex;
-      justify-content: center;
-      padding: 80px 24px;
-    }
-
-    .about-card {
-      background-color: rgba(255, 255, 255, 0.88);
-      padding: 48px 36px;
-      border-radius: 16px;
       max-width: 800px;
-      line-height: 1.8;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
-    }
-
-    .about-card img {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 24px;
-      border: 2px solid #ccc;
+      margin: 100px auto 60px auto;
+      padding: 0 24px;
+      text-align: center;
     }
 
     h1 {
       font-family: 'Cormorant Garamond', serif;
       font-size: 2.5rem;
-      margin-bottom: 16px;
-      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #ffffff;
+    }
+
+    .about-text {
+      font-size: 1.05rem;
+      color: #f2f2f2;
+      white-space: pre-line;
     }
 
     .about-text a {
-      color: #2b2b2b;
+      color: #ffffff;
       font-weight: 500;
       text-decoration: underline dotted;
     }
 
     .about-text a:hover {
-      color: #555;
+      color: #fefefe;
     }
 
     @media (max-width: 600px) {
-      .about-card {
-        padding: 32px 20px;
+      .about-wrapper {
+        margin: 60px 16px;
       }
 
       h1 {
         font-size: 2rem;
       }
+
+      .about-text {
+        font-size: 1rem;
+      }
     }
-      <!-- GoatCounter Analytics -->
-  <script data-goatcounter="https://220957.goatcounter.com/count"
-          async src="//gc.zgo.at/count.js"></script>
+    .about-photo {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 24px auto;
+  display: block;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
   </style>
 </head>
 
@@ -107,30 +112,29 @@
     <a href="about.html">About</a>
   </nav>
 
-  <div class="about-wrapper">
-    <div class="about-card">
-      <div style="text-align: center;">
-        <img src="coffee.jpeg" alt="Corina Nicoara" />
-        <h1>About Me</h1>
-      </div>
-      <div class="about-text">
-        Hi, I’m Corina Nicoara — a researcher, designer, and front-end developer exploring the intersection of aesthetics, authenticity, and digital experience.
+<div class="about-wrapper">
+  <img src="photoportrait3.jpeg" alt="Corina Nicoara" class="about-photo" />
+  <h1>About Me</h1>
+  <div class="about-text">
+    Hi, I’m Corina Nicoara — a researcher, designer, and front-end developer exploring the intersection of aesthetics, authenticity, and digital experience.
 
-        I’m currently completing a PhD in entrepreneurship, where I study how businesses navigate identity, strategic change, and design choices. Along the way, I fell in love with front-end development — not just as a technical skill, but as a form of expression and storytelling. Building this site helped me see how research, data, and design can come together to create something thoughtful, personal, and useful.
+    I’m currently completing a PhD in entrepreneurship, where I study how businesses navigate identity, strategic change, and design choices. Along the way, I fell in love with front-end development — not just as a technical skill, but as a form of expression and storytelling. Building this site helped me see how research, data, and design can come together to create something thoughtful, personal, and useful.
 
-        This space is where I bring it all together:
-        • A <a href="wardrobelib.html">wardrobe library</a> where style becomes narrative and system  
-        • A <a href="art.html">creative archive</a> of digital art and visual inspiration  
-        • A <a href="resume.html">portfolio of research and data work</a>, grounded in rigorous methods and curiosity  
-        • A <a href="styling-philosophy.html">styling & design philosophy</a> rooted in mindfulness and intentionality
+    This space is where I bring it all together:
+    • A <a href="wardrobelib.html">wardrobe library</a> where style becomes narrative and system  
+    • A <a href="art.html">creative archive</a> of digital art and visual inspiration  
+    • A <a href="resume.html">portfolio of research and data work</a>, grounded in rigorous methods and curiosity  
+    • A <a href="styling-philosophy.html">styling & design philosophy</a> rooted in mindfulness and intentionality
 
-        I love designing for beauty and meaning—whether I’m visualizing data, teaching strategic thinking, or styling a silk skirt. I believe great design isn’t just about how something looks, but how it feels, how it flows, and how it reflects what matters.
+    I love designing for beauty and meaning—whether I’m visualizing data, teaching strategic thinking, or styling a silk skirt. I believe great design isn’t just about how it looks, but how it feels, how it flows, and how it reflects what matters.
 
-        Thanks for being here.
-      </div>
-    </div>
+    Thanks for being here.
+  </div>
+</div>
+
   </div>
 
 </body>
 </html>
+
 
