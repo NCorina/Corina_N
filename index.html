@@ -2,94 +2,83 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title> Corina Nicoara – Conscious Design</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Corina Nicoara – Conscious Design</title>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter&display=swap" rel="stylesheet">
-    <!-- GoatCounter Analytics -->
-  <script data-goatcounter="https://220957.goatcounter.com/count"
-          async src="//gc.zgo.at/count.js"></script>
+
+  <!-- GoatCounter Analytics -->
+  <script data-goatcounter="https://220957.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
   <style>
     body {
       margin: 0;
-      font-family: 'Inter', sans-serif;
+      padding: 0;
       background-image: url('meadow-5648849_1280.jpg');
       background-size: cover;
       background-position: center;
-      background-repeat: no-repeat;
       background-attachment: fixed;
-      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      color: #f8f8f8;
+      line-height: 1.8;
     }
 
-    <div class="profile-banner">
-  <img src="campus_Corina_picturejpeg.jpeg" alt="Photo of Corina Nicoara" class="profile-photo-small" />
-  <div class="profile-text">
-    <h1>Corina Nicoara</h1>
-    <p class="subtitle">Ph.D. Candidate · Research · Data Science · Arts</p>
+    nav {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 16px 24px;
+      text-align: center;
+      font-size: 1rem;
+    }
 
-    <div class="link-grid">
-      <a href="resume.html">Resume · Coding · Data Science · Research</a>
-      <a href="research-philosophy.html">Statement of Research and Design Interests</a>
-      <a href="art.html">View My Art</a>
-      <a href="https://wardrobe-logic.web.app/" target="_blank" rel="noopener noreferrer">Explore the Wardrobe Library</a>
-    </div>
-  </div>
-</div>
+    nav a {
+      color: #f8f8f8;
+      margin: 0 14px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
 
+    nav a:hover {
+      color: #ffffff;
+      text-decoration: underline dotted;
+    }
+
+    .about-wrapper {
+      max-width: 800px;
+      margin: 100px auto 60px auto;
+      padding: 0 24px;
+      text-align: center;
+    }
+
+    .profile-photo {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: 0 auto 24px auto;
+      display: block;
+      border: 2px solid rgba(255, 255, 255, 0.6);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
 
     h1 {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 2.8rem;
-      margin-bottom: 0.4rem;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #ffffff;
     }
 
     .subtitle {
-      font-size: 1.2rem;
-      margin-bottom: 2.5rem;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
       font-weight: 300;
     }
-    .profile-banner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  text-align: left;
-  gap: 24px;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.profile-photo-small {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid rgba(255, 255, 255, 0.7);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-.profile-text {
-  max-width: 600px;
-}
-
-@media (max-width: 600px) {
-  .profile-banner {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .profile-text {
-    text-align: center;
-  }
-}
-
-
 
     .link-grid {
       display: grid;
       grid-template-columns: 1fr;
       gap: 1.2rem;
       max-width: 500px;
-      width: 100%;
+      margin: 0 auto;
     }
 
     .link-grid a {
@@ -160,24 +149,30 @@
         font-size: 1.5rem;
       }
     }
-    
   </style>
 </head>
+
 <body>
 
-  <div class="overlay">
-    <h1> Corina Nicoara</h1>
-    <img src="campus_Corina_picturejpeg.jpeg" alt="Photo of Corina Nicoara" class="profile-photo" />
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume · Coding · Data</a>
+    <a href="art.html">Art</a>
+    <a href="https://wardrobe-logic.web.app">Wardrobe Library</a>
+    <a href="research-philosophy.html">Statement of Research and Design Interests</a>
+    <a href="about.html">About</a>
+  </nav>
 
-    <p class="subtitle"> Ph.D. Candidate · Research · Data Science  · Arts</p>
+  <div class="about-wrapper">
+    <img src="campus_Corina_picturejpeg.jpeg" alt="Corina Nicoara" class="profile-photo" />
+    <h1>Corina Nicoara</h1>
+    <p class="subtitle">Ph.D. Candidate · Research · Data Science · Arts</p>
 
     <div class="link-grid">
       <a href="resume.html">Resume · Coding · Data Science · Research</a>
       <a href="research-philosophy.html">Statement of Research and Design Interests</a>
       <a href="art.html">View My Art</a>
       <a href="https://wardrobe-logic.web.app/" target="_blank" rel="noopener noreferrer">Explore the Wardrobe Library</a>
-
-      
     </div>
   </div>
 
@@ -191,3 +186,4 @@
 
 </body>
 </html>
+
