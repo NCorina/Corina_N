@@ -20,16 +20,21 @@
       color: #ffffff;
     }
 
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.5);
-      min-height: 100vh;
-      padding: 60px 24px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
+    <div class="profile-banner">
+  <img src="campus_Corina_picturejpeg.jpeg" alt="Photo of Corina Nicoara" class="profile-photo-small" />
+  <div class="profile-text">
+    <h1>Corina Nicoara</h1>
+    <p class="subtitle">Ph.D. Candidate · Research · Data Science · Arts</p>
+
+    <div class="link-grid">
+      <a href="resume.html">Resume · Coding · Data Science · Research</a>
+      <a href="research-philosophy.html">Statement of Research and Design Interests</a>
+      <a href="art.html">View My Art</a>
+      <a href="https://wardrobe-logic.web.app/" target="_blank" rel="noopener noreferrer">Explore the Wardrobe Library</a>
+    </div>
+  </div>
+</div>
+
 
     h1 {
       font-family: 'Cormorant Garamond', serif;
@@ -42,15 +47,41 @@
       margin-bottom: 2.5rem;
       font-weight: 300;
     }
-    .profile-photo {
-  width: 160px;
-  height: 160px;
-  object-fit: cover;
+    .profile-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: left;
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.profile-photo-small {
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
+  object-fit: cover;
   border: 2px solid rgba(255, 255, 255, 0.7);
-  margin-bottom: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
+
+.profile-text {
+  max-width: 600px;
+}
+
+@media (max-width: 600px) {
+  .profile-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-text {
+    text-align: center;
+  }
+}
+
 
 
     .link-grid {
